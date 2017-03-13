@@ -1,4 +1,4 @@
-# Apoema Trainig
+# Apoema training
 
 ## Data Science
 
