@@ -4,22 +4,26 @@ msg <- "hello"
 x <- c(0,5, 0,6)
 x <- c(TRUE, FALSE)
 
+#Funcao c cria vetores.
 
 x <- c (T,F)
 x <- c ("a","b","c")
 x <- 9:29
 x <- vector("numeric", length = 10)
 
+#Vetores no R começam em 1, nao em zero.
 
 y <- c(1.7, "a") ##caractere
 y <- c(TRUE, 2, FALSE) ##numerico - transforma o true em numero(1) e false em zero.
 
+#exemplo de coersao
 x <- 0:6
 class(x)
 as.numeric(x)
 as.logical(x)
 as.character(x)
 
+#exemplo de coersao
 x <- c("a", "b", "c")
 as.numeric(x)
 as.logical(x)
@@ -37,11 +41,13 @@ attributes(m)
 #outra forma de criar matrizes
 m <- matrix(1:30, nrow = 5, ncol = 5)
 m
+#1:3 define o vetor da matriz, quero de 1 ate n. Se colocar a mais, so vai ate o limite da matriz.
 
 
 #transformando vetor em matriz
 m <- 1:10
 m
+#dimensoes da matriz, 2 sao as linhas e 5 as colunas.
 dim(m) <- c(2,5)
 m
 
@@ -57,17 +63,21 @@ x <- list(1,"a", c("1",TRUE), 1 + 4i, c(1:5))
 x
 
 #Fatores - categorizam e separam as coisas
-x <- factor(c("sim","sim", "nï¿½o","sim","nï¿½o"))
+x <- factor(c("sim","sim", "não","sim","não"))
 x
+#retorna o levels - os fatores da expressao, que são sim e nao.
 unclass(x) #atribui os fatores ao vetor
 x
-x <- factor(c("sim","sim", "nï¿½o","sim","talvez","talvez","nï¿½o"))
+x <- factor(c("sim","sim", "não","sim","talvez","talvez","não"))
 unclass(x)
+#geralmente retorna os niveis em ordem alfabetica.
 
 x <- c(1,2, NA, 10,3)
+is.na (x) #diz se e nao disponível
 is.nan(x)
 
 x <- c(1,2, NAN, NA,4)
+is.na (x) #diz se e nao disponível
 is.nan(x) #Not a Number
 
 
@@ -86,6 +96,7 @@ names(x)
 
 x <- list(a=1, b=2,c=3)
 x
+x$b #saber qual a posicao do b
 
 #matriz
 m <- matrix(1:4, nrow = 2,ncol = 2)
@@ -120,9 +131,11 @@ x <- as.POSIXlt(x)
 
 x <- as.Date("2012-03-01")
 y <- as.Date("2012-02-28")
+x-y #faz a diferenca de dias entre as datas
 
 x <- as.Date("2012-03-01")
 y <- as.Date("2012-02-28")
+y-x #faz a diferenca de dias entre as datas
 
 
 
