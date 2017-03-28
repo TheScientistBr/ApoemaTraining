@@ -17,12 +17,8 @@ write.table(myData, file="minhaTabela.txt", sep=",")
 apply(myData[,5:6],1,mean)
 sapply(myData[,5:6],sum)
 
-
-apply(myData[,5:6],1,mean)
-myData
-
 split(myData$Produto, myData$tipo)
 
 plot(myData$Produto, myData$lucro_Ult_Mes)
 hist(myData$quantidade)
-myData
+
