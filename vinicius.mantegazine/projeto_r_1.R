@@ -6,7 +6,7 @@ tam=500
 
 myData <- data.frame(
   id_viagem = c(1:tam),
-  motorista = sample(x=c("João","Mateus","Bryan","Gustavo","Delermando","Vinicius","Carlos"),size = tam,replace=T),
+  motorista = sample(x=c("João","Mateus","Bryan","Gustavo","Delermando","Vinicius","Carlos"),size =tam,replace=T),
   linha = sample(x=c("Vitoria x Salvador","Vitoria x Belo Horizonte","Vitoria x Rio de Janeiro","Vitoria x Sao Paulo","Vitoria x Aracruz","Vitoria x Sao Mateus","Vitoria x Macae"),size =tam,replace=T),
   turno = sample(x=c("Dia","Noite"),size =tam,replace=T),
   sentido = sample(x=c("Ida","Volta"),size =tam,replace=T),
@@ -22,6 +22,5 @@ write.table(myData, file="tabelaViagens.txt", sep=",")
 
 sapply(split(myData$km_percorrido,myData$motorista),sum)
 plot(myData$km_percorrido,myData$motorista)
-barplot(sapply(split(myData$km_percorrido,myData$motorista),sum),col="lightblue")
 hist(myData$km_percorrido)
 myData
