@@ -84,3 +84,29 @@ x[[2]]
 x$bar
 x[["bar"]]
 x["bar"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+f <- function(dataf, col_inicio, col_fim){
+  n <- names(dataf)
+  
+  datar <- data.frame(matrix(ncol = length(n), nrow = nrow(dataf)))
+  colnames(datar) <- n
+  
+  for(colname in n){
+    print(colname)
+    datar[colname] <- sapply(dataf[colname], mean)
+  }
+  
+  return(datar)
+}
