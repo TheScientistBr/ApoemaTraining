@@ -1,0 +1,15 @@
+"montadora","modelo","ano","valorNovo","valorAtual","depreciacao"
+"1","toyota","corola",2009,56948,50615,14
+"2","toyota","rav4",2013,61746,33606,11
+"3","toyota","rav4",2011,70778,47351,12
+"4","toyota","corola",2011,85869,64494,13
+"5","toyota","corola",2014,54076,26252,12
+"6","ford","focus",2010,85428,51090,10
+"7","ford","new fiesta",2012,87510,60919,14
+"8","ford","focus",2013,74736,15759,13
+"9","volkswagen","gol",2011,73310,43230,14
+"10","volkswagen","golf",2012,47780,10347,10
+"11","volkswagen","fox",2014,54269,19201,13
+"12","volkswagen","up",2015,52945,26632,11
+"13","volkswagen","gol",2016,75916,3337,14
+"14","volkswagen","gol",2017,62285,26399,13
