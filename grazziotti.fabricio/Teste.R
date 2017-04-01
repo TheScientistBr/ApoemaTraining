@@ -69,9 +69,11 @@ unclass(x)
 p<-as.POSIXlt(x)
 p$sec
 
-datestring <- c("January 10, 2012 10:40:20pm", "December 9, 2011 9:10:43am")
-x <- strptime(datestring, "%B %d, %Y %H:%M, %B %d, %Y %H:%M")
+datestring <- c("January 10, 2012 10:40")
+x <- strptime(datestring, "%b %d, %Y %H:%M")
 x
+class(x)
+
 
 x<- as.Date("2012-01-01")
 y<-strptime("9 Jan 2011 11:34:21", "%d %b %Y %H:%M:%S")
