@@ -27,7 +27,7 @@ sapply(myData[,5:8], sum )
 split(myData, myData$brand)
 
 # plotando o grafico de vendas
-plot(myData$product, myData$total_sales, "h")
+plot(myData$total_sales, typ='h')
 
 # plotando o histograma com as vendas
 hist(myData$total_sales)
