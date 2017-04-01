@@ -26,7 +26,11 @@ sapply(myData[,5:8], sum )
 # usando split para separar os produtos por marca
 split(myData, myData$brand)
 
+# plotando o grafico de vendas
+plot(myData$product, myData$total_sales, "h")
 
+# plotando o histograma com as vendas
+hist(myData$total_sales)
 
 myData
 
