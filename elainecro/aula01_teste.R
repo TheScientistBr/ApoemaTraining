@@ -1,3 +1,3 @@
 x <- 1
 y <- 2
-çplokijuhygtfd
+x^2
