@@ -1,3 +1,4 @@
 x <- 1
 y <- 2
-soma = x+y
+soma <- x+y
+media <- soma / 2
