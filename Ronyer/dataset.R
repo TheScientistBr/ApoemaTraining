@@ -11,6 +11,14 @@
 myData <- data.frame(ID=1:1008,mes=rep(1:12,84),ano=rep(2006:2017,84),idade=rep(0:71,each=14),medico=rep(1:8,126),tp_atendimento=sample(factor(c('u','i')),1008,rep=T),
 tp_paciente=sample(factor(c('p','c')),1008,rep=T),tp_plano=sample(factor(c('amb','pri')),1008,rep=T))
 
+--Maior idade por ano 
 tapply(myData$idade,myData$ano,max)
+
+--Media de idade por Tipo de plano
 tapply(myData$idade,myData$tp_plano,mean)
-summary(myData)
+
+--Quantidade de atendimentos por Tipo de atendimento
+summary(myData$tp_atendimento)
+
+--Quantidade de atendimentos por tipo de plano
+summary(myData$tp_plano)
