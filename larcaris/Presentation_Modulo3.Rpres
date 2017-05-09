@@ -1,0 +1,36 @@
+Presentation_Modulo3
+========================================================
+author: Larissa Arçari
+date: 02/05/2017
+autosize: true
+
+
+========================================================
+
+Será apresentado o dataset e logo após, seus 
+respectivos gráficos, com:
+
+- Distribuição normal;
+- Distribuição uniforme;
+- Variáveis independentes;
+
+
+
+========================================================
+DataSet DSetProd
+
+```{r createDataSet, echo=FALSE }
+DSetProd <- data.frame(cnpj=runif(8,10,80),empresa=c("x","b","p","d","i","z","j","k"), qualidade=(1:4),lucro=rnorm(8,8569,5))
+DSetProd
+```
+
+
+========================================================
+Gráfico Plot
+
+```{r, echo=FALSE}
+library(ggplot2)
+ggplot(DSetProd, aes(x= qualidade, y= lucro, colour=qualidade, size=cnpj )) + geom_point() 
+```
+
+
