@@ -1,0 +1,31 @@
+---
+title: "Minha Primeira Apresentação"
+author: "Eliza Rigo"
+date: "29 de abril de 2017"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Análise Exploratória
+
+Esse documento irá mostrar algumas análises e gráficos com dados gerados aleatóriamente no próprio **R**.
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

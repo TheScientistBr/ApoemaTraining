@@ -45,13 +45,18 @@ attach(dados)
  
 boxplot(altura~sexo, col= c('pink','skyblue'), main='Boxplot Altura x Sexo')
 boxplot(imc~sexo, col= c('pink','skyblue'), main='Boxplot IMC x Sexo')
-boxplot(renda~escolaridade, col = "gray80",at=rank(tapply(renda,escolaridade, median)))
+boxplot(renda~escolaridade, col = "gray68",at=rank(tapply(renda,escolaridade, median)))
 
 plot(altura,peso)
 
 tapply(altura,sexo,mean,simplify=TRUE)
 tapply(renda,sexo,sum,simplify=TRUE)
 
+
+
+load("data/samsungData.rda")
+names(samsungData)[1:12]
+table(samsungData$activity)
 
 
 split(renda,escolaridade)
