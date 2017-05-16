@@ -37,21 +37,21 @@ demográficos e de alguns fatores de risco.
 As variáveis coletadas estão detalhadas na tabela abaixo (incluindo o tipo da
 variável, sua representação em R e outras informações importantes):
 
------------------------------------------------------------------------------------------------
-Variável     Observações               Tipo                                  Representação no R
---------     ------------------------- ------------------------------------- ------------------
-idade        Em anos completos         Dimensional de razão, discreta        Numeric
+-----------------------------------------------------------------------------------------------------
+Variável     Observações               Tipo                                        Representação no R
+--------     ------------------------- ------------------------------------------- ------------------
+idade        Em anos completos         Dimensional de razão, discreta              Numeric
 
-altura       Em metros (m)             Dimensional de razão, contínua        Numeric
+altura       Em metros (m)             Dimensional de razão, contínua              Numeric
 
-peso         Em quilo (Kg)             Dimensional de razão, contínua        Numeric
+peso         Em quilo (Kg)             Dimensional de razão, contínua              Numeric
 
-imc          peso/altura^2^            Índice dimensional de razão, contínuo Numeric
+imc          peso/altura^2^            Índice dimensional de razão, contínuo       Numeric
 
-sexo         1 = Masculino<br/>        Nominal                               Unordered Factor
+sexo         1 = Masculino<br/>        Nominal                                     Unordered Factor
              2 = Feminino
              
-escolaridade 0 = Analfabeto<br/>       Ordinal                               Ordered Factor
+escolaridade 0 = Analfabeto<br/>       Ordinal                                     Ordered Factor
              1 = 1º grau completo<br/>
              2 = 2º grau completo<br/>
              3 = 3º grau completo<br/>
@@ -59,19 +59,19 @@ escolaridade 0 = Analfabeto<br/>       Ordinal                               Ord
              5 = doutorado<br/>
              6 = pós-doutorado
              
-profissao    1 = Humanas<br/>          Nominal                               Unordered Factor
+profissao    1 = Humanas<br/>          Nominal                                     Unordered Factor
              2 = Exatas<br/>
              3 = Biológicas
              
-fumante      0 = Não<br/>              Binária                               Ordered Factor
+fumante      0 = Não<br/>              Binária                                     Ordered Factor
              1 = Sim
              
-salario      Em reais (R$)             Dimensional de razão, contínua        Numeric
+salario      Em reais (R$)             Dimensional de razão, contínua              Numeric
 
-carros       Número de carros          Dimensional de razão, discreta        Numeric
+carros       Número de carros          Dimensional de razão, discreta              Numeric
 
-filhos       Número de filhos          Dimensional de razão, discreta        Numeric
------------------------------------------------------------------------------------------------
+filhos       Número de filhos          Dimensional de razão, discreta              Numeric
+-----------------------------------------------------------------------------------------------------
 
 # 3. Simulação das variáveis do dataset
 
@@ -318,7 +318,7 @@ Agora que o dataset está criado, vamos salvar em um diretório específico, usa
 `setwd` e `write.table`:
 
 ```{r}
-setwd("~/repositoriosGit/ApoemaTraining/abrantesasf/projeto01")
+#setwd("~/repositoriosGit/ApoemaTraining/abrantesasf/projeto01")
 write.table(df, file = "projeto01.csv", sep = ",", col.names = TRUE, fileEncoding = "UTF-8")
 ```
 
